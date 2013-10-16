@@ -17,7 +17,6 @@ class TestImportContactsFromMemoryCard(GaiaTestCase):
         https://bugzilla.mozilla.org/show_bug.cgi?id=927348 -  Write a test to import from VCF file on SD card
         """
 
-        self.assertGreater(len(self.data_layer.sim_contacts), 0, "There is no SIM contacts on SIM card.")
         contacts_app = Contacts(self.marionette)
         contacts_app.launch()
 
